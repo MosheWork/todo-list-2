@@ -17,10 +17,3 @@ header {
   font-weight: bold;
 }
 
-.is-done {
-  text-decoration: line-through;
-  color: red;
-}
-.btn1 {
-  color: red;
-}
