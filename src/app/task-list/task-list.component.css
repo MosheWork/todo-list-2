@@ -48,3 +48,9 @@ table.table-fit tfoot td {
   width: 50%;
   padding: 10px;
 }
+.homePage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

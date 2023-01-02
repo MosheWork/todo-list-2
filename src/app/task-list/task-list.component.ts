@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Route } from '@angular/router';
 
 @Component({
   selector: 'app-task-list',
@@ -6,6 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./task-list.component.css'],
 })
 export class TaskListComponent {
+  constructor(private route: ActivatedRoute) {}
+
+  //read date from link
+  ngOnInit(): void {
+    var date: Date = new Date(this.route.snapshot.params['date']);
+    console.log(date);
+  }
+
   //one way data binding
   title = 'todo-list2';
   oneWayDataBinding = '***here is my one way data binding***';

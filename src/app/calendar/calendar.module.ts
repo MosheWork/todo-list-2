@@ -4,6 +4,7 @@ import { CalendarComponent } from './calendar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [CalendarComponent],
@@ -12,6 +13,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     BrowserAnimationsModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    RouterModule,
   ],
   exports: [CalendarComponent],
 })
